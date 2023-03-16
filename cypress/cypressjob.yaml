@@ -14,5 +14,6 @@ spec:
         args:
             - >-
                 npx cypress run --browser chrome
+      restartPolicy: Never
   backoffLimit: 0
  

@@ -3,8 +3,8 @@ kind: job
 metadata:
   name: cypress-tests
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    workflows.argoproj.io/hook: PreSync
+    workflows.argoproj.io/hook-delete-policy: HookSucceeded
   labels:
     workflows.argoproj.io/controller-instanceid: my-argo-instance
 spec:

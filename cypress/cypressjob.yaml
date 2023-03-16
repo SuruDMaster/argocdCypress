@@ -11,9 +11,6 @@ spec:
       container:
         image: cypress/browsers:node12.6.0-chrome77
         command: ["/bin/sh", "-c"]
-        args:
-            - >-
-                npx cypress run --browser chrome
       restartPolicy: Never
   backoffLimit: 0
  

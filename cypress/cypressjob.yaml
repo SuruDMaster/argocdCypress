@@ -1,10 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
-kind: job
+kind: CronWorkflow
 metadata:
   name: cypress-tests
-  annotations:
-    workflows.argoproj.io/hook: PreSync
-    workflows.argoproj.io/hook-delete-policy: HookSucceeded
   labels:
     workflows.argoproj.io/controller-instanceid: my-argo-instance
 spec:

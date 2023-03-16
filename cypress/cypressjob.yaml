@@ -1,3 +1,4 @@
+
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -8,9 +9,9 @@ metadata:
 spec:
   template:
     spec:
-      container:
-        image: cypress/browsers:node12.6.0-chrome77
-        command: ["/bin/sh", "-c"]
+      containers:
+      - name: sleep
+        image: alpine:latest
+        command: ["sleep", "10"]
       restartPolicy: Never
   backoffLimit: 0
- 
